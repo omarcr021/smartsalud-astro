@@ -2,6 +2,10 @@
 import '../styles/global.css';
 
 const pageTitle = "Pagina de Inicio";
+
+const colorFont1 = "blue";
+const fontSize1 = "5em";
+
 ---
 
 <html lang="es">
@@ -11,6 +15,12 @@ const pageTitle = "Pagina de Inicio";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
     <title>{pageTitle}</title>
+    <style define:vars={{colorFont1, fontSize1}}>
+      h1 {
+        color: var(--colorFont1);
+        font-size: var(--fontSize1);
+      }
+    </style>
   </head>
   <body>
     <h1>{pageTitle}</h1>
