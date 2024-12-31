@@ -1,4 +1,5 @@
 ---
+const pageTitle = "Mi blog personal!";
 ---
 
 <html lang="es">
@@ -7,12 +8,17 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Blog</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">Inicio</a>
     <a href="/about">Sobre mi</a>
-    <h1>Blog Personal</h1>
+    <h1>{pageTitle}</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique cum fugit doloremque a cupiditate natus sunt fuga officiis. Adipisci repudiandae omnis blanditiis praesentium laboriosam cupiditate, qui recusandae sit exercitationem a quae consequatur eius vitae iusto quis voluptatum! Laborum, assumenda explicabo deserunt quae ipsa voluptates libero, sunt dolores nostrum tempora culpa qui! Deleniti animi explicabo quis! Minima provident ipsam vitae nisi?</p>
+    <ul>
+      <li><a href="/posts/post-1/">Publicación 1</a></li>
+      <li><a href="/posts/post-2/">Publicación 2</a></li>
+      <li><a href="/posts/post-3/">Publicación 3</a></li>
+    </ul>
   </body>
 </html>
